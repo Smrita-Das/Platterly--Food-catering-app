@@ -5,12 +5,12 @@ import platerllyLOGO from '../assets/platterly_Logo.png'
 function Navbar() {
   return (
     <>
-    <div className="sticky top-0 w-full bg-[#bfa7b3db] text-[#000] ">
+    <div className="sticky top-0 w-full bg-[#bfa7b3db] text-[#000]">
       <div className="flex px-10 py-2 justify-between items-center">
 
         <div className="flex items-center gap-2">
           <img src={platerllyLOGO} alt="" className="h-10 w-10 rounded-full " />
-          <p className="">Platterly by SD</p>
+          <Link to='/'><p className=" ">Platterly by SD</p></Link>
         </div>
       <Link to='/about'>About Us</Link>
       <Link to='/products'>Products/Services</Link>
