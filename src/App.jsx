@@ -7,6 +7,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 
+
 function App() {
   return (
     <>
