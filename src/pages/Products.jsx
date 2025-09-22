@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
+import Menus from './Menus';
+import { Link } from 'react-router-dom';
 
 const images = [
   "https://images.unsplash.com/photo-1708388064672-6536507fdf6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a29yZWFuJTIwZm9vZCUyMHBsYXR0ZXJ8ZW58MHwwfDB8fHwy", // food image 1
@@ -23,7 +25,7 @@ function Products() {
 
   return (
     <>
-   <div className="w-full max-w-6xl mx-auto overflow-hidden relative py-10">
+   {/* <div className="w-full max-w-6xl mx-auto overflow-hidden relative py-10">
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${current * 100}%)` }}
@@ -43,7 +45,7 @@ function Products() {
       </div>
 
       {/* Dots Indicator */}
-      <div className="flex justify-center mt-6 space-x-2">
+      {/* <div className="flex justify-center mt-6 space-x-2">
         {images.map((_, idx) => (
           <button
             key={idx}
@@ -54,14 +56,14 @@ function Products() {
           ></button>
         ))}
       </div>
-    </div>;
+    </div>; */} 
   
 
 
-
-
+   
+      
     </>
-  )
+      )
 }
 
 export default Products
