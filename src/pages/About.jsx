@@ -147,7 +147,7 @@ function About() {
 
           <div  id='part-2' className=" mr-6">
               <section className=" flex justify-center">
-      <div className="w-[400px] text-center">
+      <div className="w-[400px] border-r rounded-2xl px-1 border-r-neutral-400 text-center">
         
         {/* Founder Image */}
         <div className="flex justify-center">
@@ -193,13 +193,15 @@ function About() {
     </section>
           </div> {/* end of part-2 */}
 
-<div id='part-1' className="flex flex-wrap gap-2  ">
+<div id='part-1' className="flex  flex-wrap gap-2  ">
             {
-              teamDetails.map(team=> <TeamDetails 
+              
+                teamDetails.map(team=> <TeamDetails 
                 img={team.img} name={team.name} experience={team.experience}
                  speciality={team.specialty} 
                  desc={team.description} 
                  id={team.id} designation={team.designation} />)
+              
             }
           </div>
              
