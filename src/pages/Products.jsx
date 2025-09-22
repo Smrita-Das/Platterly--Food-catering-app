@@ -102,7 +102,6 @@ function Products() {
     </div>
   
 
-
 <div className="w-[980px] mt-5 mb-10 mx-auto ">
   <h1 className="font-bold text-[#452234] mb-7 text-4xl ">Featured Platters 🍽️</h1>
   <div className="flex justify-between">

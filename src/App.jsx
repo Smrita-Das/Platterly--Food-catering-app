@@ -7,6 +7,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import Menus from './pages/Menus'
+import Intro from './pages/Intro'
 
 
 function App() {
