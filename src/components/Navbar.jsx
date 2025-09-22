@@ -9,8 +9,9 @@ function Navbar() {
       <div className="flex px-10 py-2 justify-between items-center">
 
         <div className="flex items-center gap-2">
-          <img src={platerllyLOGO} alt="" className="h-10 w-10 rounded-full " />
-          <Link to='/'><p className=" ">Platterly by SD</p></Link>
+          <Link to='/'><img src={platerllyLOGO} alt="" className="h-8 w-full object-contain  " /></Link>
+          
+          {/* <Link to='/'><p className=" inline">Platterly by SD</p></Link> */}
         </div>
       <Link to='/about'>About Us</Link>
       <Link to='/products'>Products/Services</Link>

@@ -38,7 +38,7 @@ const images = [
           </Link>         
      </div>    
   </div>
-<img className="w-[320px] h-[320px] " src={logo} alt=""  />
+<img className="w-1/2 object-contain" src={logo} alt=""  />
 </div>
 </div>
 
