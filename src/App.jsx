@@ -8,11 +8,16 @@ import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import Menus from './pages/Menus'
 import Intro from './pages/Intro'
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
 
 function App() {
   return (
     <>
+<SignedOut>
+  <Intro/>
+</SignedOut>
+
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>

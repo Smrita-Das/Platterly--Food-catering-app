@@ -15,7 +15,7 @@ function Navbar() {
         <div className='flex gap-4 items-center font-semibold text-[#7e1b41]'>
           <Link to='/about'>About Us</Link>
           <Link to='/products'>Products & Services</Link>
-          <Link to='/intro'>SignUp</Link>
+          <Link>SignUp</Link>
           <div><BsCart3/></div>
         </div>
 
