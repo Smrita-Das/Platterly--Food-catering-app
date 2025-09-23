@@ -14,6 +14,8 @@ import { GiGreenhouse } from 'react-icons/gi';
 import { FaRegClock } from 'react-icons/fa6';
 import { MdOutlinePublishedWithChanges } from 'react-icons/md';
 import { PiPackageLight } from 'react-icons/pi';
+import { ReactTyped } from "react-typed";
+
 
 function Home() {
 
@@ -44,6 +46,16 @@ const images = [
   </div>
 <img className="w-1/2 object-contain  animate-float" src={logo} alt=""  />
 </div>
+</div>
+
+<div className="mx-auto text-center w-[980px]  mt-5 mb-5">
+  <p className="text-2xl py-5 text-[#76063e]">WHAT WE DO 👩‍🍳</p>
+  <h1 className="font-bold text-5xl text-[#812f4e] ">
+    <ReactTyped
+              strings={['Premium Catering Services...' ]}
+              typeSpeed={130}
+            />
+  </h1>
 </div>
 
 <div className="mt-8 mb-10 mx-auto">
