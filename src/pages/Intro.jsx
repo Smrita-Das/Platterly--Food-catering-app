@@ -5,7 +5,6 @@ import { GiGreenhouse } from 'react-icons/gi';
 import { FaRegClock } from 'react-icons/fa6';
 import { MdOutlinePublishedWithChanges } from 'react-icons/md';
 import { PiPackageLight } from 'react-icons/pi';
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
 
 function Intro() {
@@ -18,14 +17,7 @@ function Intro() {
               <Link to='/'><img src={platerllyLOGO} alt="" className="h-8 w-full object-contain" /></Link>
             </div>
             <div className='font-semibold text-[#7e1b41]'>
-              <header>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-    </header>
+      
             </div>
          </div>
         </div>
