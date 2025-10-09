@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+
 
 const welcomeDrinks = [
   {
@@ -220,6 +222,7 @@ const desserts = [
 function Menus() {
   return (
     <>
+    <Navbar/>
      <h1 className="text-4xl text-center p-6 text-[#9f0c55db] font-bold"><span className=''>Welcome Drinks!🍸</span></h1>
     {
       <div className='w-full mt-2 flex gap-3'>

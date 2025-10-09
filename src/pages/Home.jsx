@@ -15,6 +15,7 @@ import { FaRegClock } from 'react-icons/fa6';
 import { MdOutlinePublishedWithChanges } from 'react-icons/md';
 import { PiPackageLight } from 'react-icons/pi';
 import { ReactTyped } from "react-typed";
+import Navbar from '../components/Navbar';
 
 
 function Home() {
@@ -29,6 +30,7 @@ const images = [
 
   return (
     <>
+    <Navbar/>
 <div className="mt-8  max-w-[960px] mx-auto bg-[] ">
 <div className="flex items-center p-8 gap-10">
   <div id='content' className="">
@@ -124,6 +126,7 @@ const images = [
     
     </div>
   </div>
+ 
     </>
   )
 }

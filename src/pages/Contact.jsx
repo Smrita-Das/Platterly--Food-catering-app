@@ -5,6 +5,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { FaInstagram } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
+import Navbar from '../components/Navbar';
 
 function Contact() {
   
@@ -27,6 +28,7 @@ function handleSubmit(e){
 
   return (
     <>
+    <Navbar/>
      <div className="mt-4 text-center">
       <h1 className=" text-5xl font-semibold text-[#4d192d]">Get in touch with <span className=''>Platterly</span></h1>
       <div className="text-lg py-2 text-[#4d192d]">We're here to help you with any inquiries and requests!</div>

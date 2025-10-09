@@ -5,9 +5,12 @@ import { GiGreenhouse } from 'react-icons/gi';
 import { FaRegClock } from 'react-icons/fa6';
 import { MdOutlinePublishedWithChanges } from 'react-icons/md';
 import { PiPackageLight } from 'react-icons/pi';
+import {useAuth0} from '@auth0/auth0-react'
 
 
 function Intro() {
+  const {user , loginWithRedirect} =useAuth0();
+   
   return (
     <>
     <div className="sticky top-0 w-full bg-[#bfa7b3] text-[#000]">
@@ -17,7 +20,7 @@ function Intro() {
               <Link to='/'><img src={platerllyLOGO} alt="" className="h-8 w-full object-contain" /></Link>
             </div>
             <div className='font-semibold text-[#7e1b41]'>
-      
+                <button onClick={e => loginWithRedirect()} className='cursor-pointer'>Login/SignUp</button>
             </div>
          </div>
         </div>
@@ -63,7 +66,8 @@ function Intro() {
        <div className="w-[980px] bg-[#cebfc6] mx-auto mt-12 mb-8 p-10  rounded-2xl flex items-center justify-between">
                   <h2 className="text-2xl text-[#452234]">Ready to make your event unforgetable?</h2>
                  <button className='bg-[#5e183a] text-white text-lg cursor-pointer px-3 py-4 rounded-2xl '>Book your platters Now!!</button>
-           </div>   
+           </div>  
+           
     </>
   )
 }

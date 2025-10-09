@@ -6,6 +6,8 @@ import { GiGreenhouse } from 'react-icons/gi';
 import { FaRegClock } from 'react-icons/fa6';
 import { MdOutlinePublishedWithChanges } from 'react-icons/md';
 import { PiPackageLight } from 'react-icons/pi';
+import Navbar from '../components/Navbar';
+
 
 const images = [
   "https://images.unsplash.com/photo-1756395067293-0f7e5604fba3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbmVzZSUyMGZvb2QlMjBwbGF0dGVyfGVufDB8MXwwfHx8MA%3D%3D", // food image 1
@@ -61,6 +63,7 @@ function Products() {
 
   return (
     <>
+    <Navbar/>
     <div className="flex mb-12 justify-between items-center ">
         
     <div className="w-1/2  px-5 mx-auto overflow-x-hidden  mt-8">

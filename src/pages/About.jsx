@@ -3,6 +3,7 @@ import Reviews from '../components/Reviews';
 import vid from '../assets/catering_vid.mp4'
 import TeamDetails from '../components/TeamDetails';
 import { ReactTyped } from "react-typed";
+import Navbar from '../components/Navbar';
 
 
 
@@ -108,6 +109,7 @@ const teamDetails = [
 function About() {
   return (
     <>
+    <Navbar/>
     <div id='top-sec' className="">
       <div className="relative w-full h-[400px] flex justify-end  bg-[#4a2035db] ">
         <video src={vid} className="h-full object-cover" playsInline loop autoPlay muted></video>
@@ -223,6 +225,7 @@ function About() {
           reviews.map(review=> <Reviews desc={review.review} date={review.date} img={review.img} name={review.name} prof={review.designation} />)
         }
       </div>
+      
     </>
   )
 }
