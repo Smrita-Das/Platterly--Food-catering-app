@@ -16,19 +16,19 @@ import {useAuth0} from '@auth0/auth0-react'
 
 
 function App() {
-    const {user , isAuthenticated} =useAuth0();
+    // const {user , isAuthenticated} =useAuth0();
        
   return (
     <>
 
-    {
+    {/* {
       isAuthenticated ? <Home/> : <Intro/>
     }
-   
+    */}
  
     
     <Routes>
-      <Route path='/home' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/products' element={<Products/>}/>

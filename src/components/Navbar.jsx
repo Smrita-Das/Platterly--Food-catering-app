@@ -5,7 +5,7 @@ import { BsCart3 } from 'react-icons/bs';
 import {useAuth0} from '@auth0/auth0-react'
 
 function Navbar() {
-  const {user, logout} =useAuth0();
+  // const {user, logout} =useAuth0();
   return (
     <>
     <div className="sticky top-0 w-full bg-[#bfa7b3] text-[#000]">
@@ -17,7 +17,8 @@ function Navbar() {
         <div className='flex gap-4 items-center font-semibold text-[#7e1b41]'>
           <Link to='/about'>About Us</Link>
           <Link to='/products'>Products & Services</Link>
-          <button className='cursor-pointer' onClick={e => logout()}>Logout</button>
+          <Link to=''>Signup</Link>
+          {/* <button className='cursor-pointer' onClick={e => logout()}>Logout</button> */}
           <div><BsCart3/></div>
         </div>
 
